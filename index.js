@@ -6,7 +6,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
-  response.send('This is a basic test');
+  response.send('-Hello User, This is a basic test for Heroku usage-');
 });
 
 app.listen(app.get('port'), function() {
